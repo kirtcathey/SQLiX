@@ -3,7 +3,7 @@
 
 # -- SQLiX Version 1.0 --
 #
-# © Copyright 2006 Cedric COCHIN, All Rights Reserved.
+# Â© Copyright 2006 Cedric COCHIN, All Rights Reserved.
 #
 
 # 
@@ -226,17 +226,21 @@ use vars qw(@MESSAGES);
 		
 ); 
  
-require("./methods/method_blind.pl");
-require("./methods/method_error_MSSQL.pl");
-require("./methods/method_error_message.pl");
- 
+# require("./methods/method_blind.pl");
+# require("./methods/method_error_MSSQL.pl");
+# require("./methods/method_error_message.pl");
+
+require("method_blind.pl");
+require("method_error_MSSQL.pl");
+require("method_error_message.pl");
+
 my $cookie_file = "./lwp_cookies.dat";
  
 ## --------------------------------------------------------------------------------------------
 # Intro
 ## --------------------------------------------------------------------------------------------
 
-printf "======================================================\n                   -- SQLiX --\n © Copyright 2006 Cedric COCHIN, All Rights Reserved.\n======================================================\n\n";
+printf "======================================================\n                   -- SQLiX --\n Â© Copyright 2006 Cedric COCHIN, All Rights Reserved.\n======================================================\n\n";
 
 ## --------------------------------------------------------------------------------------------
 # Options
